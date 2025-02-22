@@ -3,16 +3,16 @@ import logo from '../assets/logo.svg'
 
 export default function HeroSection() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen size-full overflow-hidden">
       <nav className=" container relative mx-auto flex w-full items-center justify-between px-5 py-3 text-xl ">
       <div><img src={logo} alt="Zomato Logo" className="h-35 w-auto drop-shadow-md" /></div>
 
         <div className="flex items-center justify-around">
           <ul className="mx-3 flex">
-            <li className="mx-3">Invester Relation</li>
-            <li className="mx-3">Add Restaurant</li>
-            <li className="mx-3">Log In</li>
-            <li className="mx-3">Sign Up</li>
+            <li className="mx-3"><a href="#">Invester Relation</a>x</li>
+            <li className="mx-3"><a href="#">Add Restaurant</a></li>
+            <li className="mx-3"><a href="#">Log In</a></li>
+            <li className="mx-3"><a href="#">Sign Up</a></li>
           </ul>
         </div>
       </nav>

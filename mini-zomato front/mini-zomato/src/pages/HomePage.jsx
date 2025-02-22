@@ -11,7 +11,10 @@ const handleClick =()=> alert("card is clicked")
 export default function HomePage() {
   return (
     <div>
-      <HeroSection/>
+      <div>
+        <HeroSection/>
+      </div>
+      
       <div className="flex justify-between items-center w-full px-6">
         <Card oneLiner={"Stay home and order to your door step"} className="bg-red-100" onClick={()=>handleClick()} title={"Order Online"} imgURL={"https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"}/>
         <Card oneLiner={"View the city's favourite dining venues"} className="bg-red-100"  onClick={()=>handleClick()} title={"Dining"} imgURL={"https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"}/>
@@ -41,7 +44,8 @@ export default function HomePage() {
     <CardContent text={"Best Insta Worthy Places"} places={'18'} imgURL={"https://content.jdmagicbox.com/comp/pune/g7/020pxx20.xx20.181227173126.b5g7/catalogue/tipsy-turtle-poolside-lounge-cafe-bhugaon-pune-restaurants-1pe861mm7e.jpg"}/>
   
    </div>
-   <Footer/>
+   {/* <div><Footer/></div> */}
+   
     </div>
   );
 }
